@@ -1,0 +1,2 @@
+Sat May 20 15:02:04 -03 2017 : Echo base
+Sat May 20 15:03:12 -03 2017 : Echo base

@@ -1,0 +1,17 @@
+CC = c++
+CFLAGS = -std=c++14 -I../hpp/
+OBJS = *.o #gets anything that endrs with an .o
+
+
+all: $(OBJS) libera.a
+
+$(OBJS) : *.cpp
+	$(CC) $(CFLAGS) -c *.cpp #this will compile all .cpp files with the compiler CC and flags CFLAGS
+
+libera.a: $(OBJS)
+	ar rcs libera.a $(OBJS) #ar compiles everything in a sigle Archive, (aka: Library)
+	ls *.a
+
+clean:
+	rm -f $(OBJS)
+	rm -f *.a
